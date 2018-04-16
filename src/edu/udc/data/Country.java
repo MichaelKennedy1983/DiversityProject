@@ -651,6 +651,120 @@ public class Country {
                     "Nairobi", 49.125, "edu/udc/data/img/maps/Kenya_Map.png",
                     new URL("https://en.wikipedia.org/wiki/Kenya"));
             countries.add(kenya);
+
+            Country kiribati = new Country("Kiribati", "edu/udc/data/img/flags/Kiribati.png",
+                    0.051100, 0.023700, 0.554100,
+                    "Tarawa", 0.110, "edu/udc/data/img/maps/Kiribati_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Kiribati"));
+            countries.add(kiribati);
+
+            Country southKorea = new Country("South Korea", "edu/udc/data/img/flags/South_Korea.png",
+                    0.039200, 0.002800, 0.489100,
+                    "Seoul", 51.446, "edu/udc/data/img/maps/South_Korea_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/South_Korea"));
+            countries.add(southKorea);
+
+            Country northKorea = new Country("North Korea", "edu/udc/data/img/flags/North_Korea.png",
+                    0.002000, 0.002100, 0.660400,
+                    "Pyongyang", 25.369, "edu/udc/data/img/maps/North_Korea_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/North_Korea"));
+            countries.add(northKorea);
+
+            Country kyrgyzstan = new Country("Kyrgyzstan", "edu/udc/data/img/flags/Kyrgyzstan.png",
+                    0.675200, 0.594900, 0.447000,
+                    "Bishkek", 6.019, "edu/udc/data/img/maps/Kyrgyzstan_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Kyrgyzstan"));
+            countries.add(kyrgyzstan);
+
+            Country kuwait = new Country("Kuwait", "edu/udc/data/img/flags/Kuwait.png",
+                    0.660400, 0.344400, 0.674500,
+                    "Kuwait City", 4.053, "edu/udc/data/img/maps/Kuwait_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Kuwait"));
+            countries.add(kuwait);
+
+            Country laos = new Country("Laos", "edu/udc/data/img/flags/Laos.png",
+                    0.513900, 0.638200, 0.545300,
+                    "Vientiane", 6.758, "edu/udc/data/img/maps/Laos_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Laos"));
+            countries.add(laos);
+
+            Country latvia = new Country("Latvia", "edu/udc/data/img/flags/Latvia.png",
+                    0.586700, 0.579500, 0.555600,
+                    "Riga", 1.953, "edu/udc/data/img/maps/Latvia_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Latvia"));
+            countries.add(latvia);
+
+            Country lebanon = new Country("Lebanon", "edu/udc/data/img/flags/Lebanon.png",
+                    0.131400, 0.131200, 0.788600,
+                    "Beirut", 6.007, "edu/udc/data/img/maps/Lebanon_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Lebanon"));
+            countries.add(lebanon);
+
+            Country lesotho = new Country("Lesotho", "edu/udc/data/img/flags/Lesotho.png",
+                    0.255000, 0.254300, 0.721100,
+                    "Maseru", 2.204, "edu/udc/data/img/maps/Lesotho_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Lesotho"));
+            countries.add(lesotho);
+
+            Country liberia = new Country("Liberia", "edu/udc/data/img/flags/Liberia.png",
+                    0.908400, 0.903800, 0.488300,
+                    "Monrovia", 4.503, "edu/udc/data/img/maps/Liberia_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Liberia"));
+            countries.add(liberia);
+
+            Country libya = new Country("Libya", "edu/udc/data/img/flags/Libya.png",
+                    0.792000, 0.075800, 0.057000,
+                    "Tripoli", 6.293, "edu/udc/data/img/maps/Libya_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Libya"));
+            countries.add(libya);
+
+            Country liechtenstein = new Country("Liechtenstein", "edu/udc/data/img/flags/Liechtenstein.png",
+                    0.572600, 0.224600, 0.334300,
+                    "Vaduz", 0.037, "edu/udc/data/img/maps/Liechtenstein_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Liechtenstein"));
+            countries.add(liechtenstein);
+
+            Country lithuania = new Country("Lithuania", "edu/udc/data/img/flags/Lithuania.png",
+                    0.322300, 0.321900, 0.414100,
+                    "Vilnius", 2.811, "edu/udc/data/img/maps/Lithuania_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Lithuania"));
+            countries.add(lithuania);
+
+            Country luxembourg = new Country("Luxembourg", "edu/udc/data/img/flags/Luxembourg.png",
+                    0.530200, 0.644000, 0.091100,
+                    "Luxembourg", 0.591, "edu/udc/data/img/maps/Luxembourg_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Luxembourg"));
+            countries.add(luxembourg);
+
+            Country macau = new Country("Macau", "edu/udc/data/img/flags/Macau.png",
+                    0.000000, 0.251900, 0.551100,
+                    "", 0.651, "edu/udc/data/img/maps/Macau_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Macau"));
+            countries.add(macau);
+
+            Country macedonia = new Country("Macedonia", "edu/udc/data/img/flags/Macedonia.png",
+                    0.502300, 0.502100, 0.589900,
+                    "Skopje", 2.104, "edu/udc/data/img/maps/Macedonia_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Republic_of_Macedonia"));
+            countries.add(macedonia);
+
+            Country madagascar = new Country("Madagascar", "edu/udc/data/img/flags/Madagascar.png",
+                    0.879100, 0.020400, 0.519100,
+                    "Antananarivo", 24.895, "edu/udc/data/img/maps/Madagascar_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Madagascar"));
+            countries.add(madagascar);
+
+            Country malawi = new Country("Malawi", "edu/udc/data/img/flags/Malawi.png",
+                    0.674400, 0.602300, 0.819200,
+                    "Lilongwe", 18.092, "edu/udc/data/img/maps/Malawi_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Malawi"));
+            countries.add(malawi);
+
+            Country malaysia = new Country("Malaysia", "edu/udc/data/img/flags/Malaysia.png",
+                    0.588000, 0.597000, 0.665700,
+                    "Kuala Lumpur", 31.925, "edu/udc/data/img/maps/Malaysia_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Malaysia"));
+            countries.add(malaysia);
         } catch (MalformedURLException e) {
             System.err.println(e);
         }

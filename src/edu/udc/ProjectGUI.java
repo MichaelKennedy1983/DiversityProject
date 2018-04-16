@@ -180,6 +180,7 @@ public class ProjectGUI extends JFrame {
         lblCountriesFilter.setForeground(Color.GRAY);
         lblMap.setIcon(iiGlobeImage);
         lblFractionalization.setForeground(Color.GRAY);
+        lblFractionalization.setToolTipText(fractInfoTT);
         lblFractInfo.setForeground(Color.BLUE);
         lblFractInfo.setToolTipText(fractInfoTT);
         lblCountryStatic.setForeground(Color.GRAY);
