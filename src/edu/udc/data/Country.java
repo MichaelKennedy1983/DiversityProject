@@ -645,6 +645,12 @@ public class Country {
                     "Astana", 17.988, "edu/udc/data/img/maps/Kazakhstan_Map.png",
                     new URL("https://en.wikipedia.org/wiki/Kazakhstan"));
             countries.add(kazakhstan);
+
+            Country kenya = new Country("Kenya", "edu/udc/data/img/flags/Kenya.png",
+                    0.858800, 0.886000, 0.776500,
+                    "Nairobi", 49.125, "edu/udc/data/img/maps/Kenya_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Kenya"));
+            countries.add(kenya);
         } catch (MalformedURLException e) {
             System.err.println(e);
         }
