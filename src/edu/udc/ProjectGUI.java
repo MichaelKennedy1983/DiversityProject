@@ -17,6 +17,7 @@ import java.net.URL;
 import java.util.ArrayList;
 
 public class ProjectGUI extends JFrame {
+    // Text
     private String frameTitle = "Diversity By Country";
     private String fractInfoTT = "<html>Fractionalization measures the probability that two randomly<br>" +
             "drawn individuals (from a country) are not from the same group.</html>";
