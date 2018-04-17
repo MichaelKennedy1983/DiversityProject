@@ -52,6 +52,7 @@ public class ProjectGUI extends JFrame {
     private JButton bttnRemove = new JButton("Remove");
     private JButton bttnInfo = new JButton("More Info");
     private JButton bttnClose = new JButton("Close");
+    private JButton bttnClear = new JButton("Clear");
     private JSeparator sprtrLeft = new JSeparator(SwingConstants.VERTICAL);
     private JSeparator sprtrCompare = new JSeparator(SwingConstants.VERTICAL);
     private JSeparator sprtrRight = new JSeparator(SwingConstants.VERTICAL);
@@ -174,6 +175,9 @@ public class ProjectGUI extends JFrame {
 
         tblCompare.setModel(cmptmCompare);
         tblCompare.setDefaultRenderer(Double.class, new DoubleRenderer());
+        for (int i = 1; i < tblCompare.getColumnCount(); i++) {
+            tblCompare.getColumnModel().getColumn(i).setMaxWidth(80);
+        }
         scrlpnCompare.add(tblCompare);
         scrlpnCompare.setViewportView(tblCompare);
 
@@ -337,12 +341,16 @@ public class ProjectGUI extends JFrame {
         pnlCompare.setLayout(compareLayout);
 
         compareLayout.setAutoCreateGaps(true);
-        compareLayout.setAutoCreateContainerGaps(true);
+        //compareLayout.setAutoCreateContainerGaps(true);
 
         compareLayout.setHorizontalGroup(compareLayout.createSequentialGroup()
             .addGroup(compareLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
                 .addComponent(scrlpnCompare)
-                .addComponent(bttnRemove)
+                .addGroup(compareLayout.createSequentialGroup()
+                    .addComponent(bttnRemove)
+                    .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED, 20, Short.MAX_VALUE)
+                    .addComponent(bttnClear)
+                )
             )
             .addComponent(sprtrRight)
         );
@@ -350,7 +358,10 @@ public class ProjectGUI extends JFrame {
         compareLayout.setVerticalGroup(compareLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
             .addGroup(compareLayout.createSequentialGroup()
                 .addComponent(scrlpnCompare)
-                .addComponent(bttnRemove)
+                .addGroup(compareLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
+                    .addComponent(bttnRemove)
+                    .addComponent(bttnClear)
+                )
             )
             .addComponent(sprtrRight)
         );
@@ -374,6 +385,7 @@ public class ProjectGUI extends JFrame {
         bttnCompare.addActionListener(alSendToCompare);
         bttnClose.addActionListener(alClose);
         bttnRemove.addActionListener(alRemove);
+        bttnClear.addActionListener(alClear);
 
 
         tblCountries.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
@@ -519,6 +531,13 @@ public class ProjectGUI extends JFrame {
 
     private ActionListener alRemove = (ae) -> {
         removeFromCompareTable();
+    };
+
+    private ActionListener alClear = (ae) -> {
+        cmptmCompare.getData().clear();
+        cmptmCompare.fireTableDataChanged();
+        pnlCompare.setVisible(false);
+        this.pack();
     };
 
     private ActionListener alClose = (ae) -> {

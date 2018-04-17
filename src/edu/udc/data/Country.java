@@ -765,11 +765,130 @@ public class Country {
                     "Kuala Lumpur", 31.925, "edu/udc/data/img/maps/Malaysia_Map.png",
                     new URL("https://en.wikipedia.org/wiki/Malaysia"));
             countries.add(malaysia);
+
+            Country mali = new Country("Mali", "edu/udc/data/img/flags/Mali.png",
+                    0.690600, 0.838800, 0.182000,
+                    "Bamako", 14.517, "edu/udc/data/img/maps/Mali_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Mali"));
+            countries.add(mali);
+
+            Country malta = new Country("Malta", "edu/udc/data/img/flags/Malta.png",
+                    0.041400, 0.090700, 0.122300,
+                    "Valletta", 0.445, "edu/udc/data/img/maps/Malta_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Malta"));
+            countries.add(malta);
+
+            Country marshallIslands = new Country("Marshall Islands", "edu/udc/data/img/flags/Marshall_Islands.png",
+                    0.060300, 0.073400, 0.520700,
+                    "Majuro", 0.053, "edu/udc/data/img/maps/Marshall_Islands_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Marshall_Islands"));
+            countries.add(marshallIslands);
+
+            Country martinique = new Country("Martinique", "edu/udc/data/img/flags/Martinique.png",
+                    0.000000, 0.000000, 0.233600,
+                    "", 0.386, "edu/udc/data/img/maps/Martinique_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Martinique"));
+            countries.add(martinique);
+
+            Country mauritania = new Country("Mauritania", "edu/udc/data/img/flags/Mauritania.png",
+                    0.615000, 0.326000, 0.014900,
+                    "Nouakchott", 4.301, "edu/udc/data/img/maps/Mauritania_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Mauritania"));
+            countries.add(mauritania);
+
+            Country mauritius = new Country("Mauritius", "edu/udc/data/img/flags/Mauritius.png",
+                    0.463400, 0.454700, 0.638500,
+                    "Port Louis", 1.262, "edu/udc/data/img/maps/Mauritius_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Mauritius"));
+            countries.add(mauritius);
+
+            Country mayotte = new Country("Mayotte", "edu/udc/data/img/flags/Mayotte.png",
+                    0.000000, 0.721200, 0.062000,
+                    "", 0.257, "edu/udc/data/img/maps/Mayotte_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Mayotte"));
+            countries.add(mayotte);
+
+            Country mexico = new Country("Mexico", "edu/udc/data/img/flags/Mexico.png",
+                    0.541800, 0.151100, 0.179600,
+                    "Mexico City", 123.675, "edu/udc/data/img/maps/Mexico_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Mexico"));
+            countries.add(mexico);
+
+            Country micronesia = new Country("Micronesia", "edu/udc/data/img/flags/Micronesia.png",
+                    0.700500, 0.748300, 0.646900,
+                    "Palikir", 0.105, "edu/udc/data/img/maps/Micronesia_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Federated_States_of_Micronesia"));
+            countries.add(micronesia);
+
+            Country moldova = new Country("Moldova", "edu/udc/data/img/flags/Moldova.png",
+                    0.553500, 0.553300, 0.560300,
+                    "Chișinău", 2.998, "edu/udc/data/img/maps/Moldova_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Moldova"));
+            countries.add(moldova);
+
+            Country monaco = new Country("Monaco", "edu/udc/data/img/flags/Monaco.png",
+                    0.683800, 0.730500, 0.304700,
+                    "Monaco ", 0.038, "edu/udc/data/img/maps/Monaco_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Monaco"));
+            countries.add(monaco);
+
+            Country mongolia = new Country("Mongolia", "edu/udc/data/img/flags/Mongolia.png",
+                    0.368200, 0.373400, 0.079900,
+                    "Ulaanbaatar", 3.082, "edu/udc/data/img/maps/Mongolia_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Mongolia"));
+            countries.add(mongolia);
+
+            Country morocco = new Country("Morocco", "edu/udc/data/img/flags/Morocco.png",
+                    0.484100, 0.468300, 0.003500,
+                    "Rabat", 33.848, "edu/udc/data/img/maps/Morocco_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Morocco"));
+            countries.add(morocco);
+
+            Country mozambique = new Country("Mozambique", "edu/udc/data/img/flags/Mozambique.png",
+                    0.693200, 0.812500, 0.675900,
+                    "Maputo", 28.829, "edu/udc/data/img/maps/Mozambique_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Mozambique"));
+            countries.add(mozambique);
+
+            Country burma = new Country("Burma", "edu/udc/data/img/flags/Burma.png",
+                    0.506200, 0.507200, 0.197400,
+                    "Naypyidaw", 53.583, "edu/udc/data/img/maps/Burma_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Myanmar"));
+            countries.add(burma);
+
+            Country namibia = new Country("Namibia", "edu/udc/data/img/flags/Namibia.png",
+                    0.632900, 0.700500, 0.662600,
+                    "Windhoek", 2.607, "edu/udc/data/img/maps/Namibia_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Namibia"));
+            countries.add(namibia);
+
+            Country nauru = new Country("Nauru", "edu/udc/data/img/flags/Nauru.png",
+                    0.583200, 0.616100, 0.619400,
+                    "Yaren", 0.010, "edu/udc/data/img/maps/Nauru_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Nauru"));
+            countries.add(nauru);
+
+            Country nepal = new Country("Nepal", "edu/udc/data/img/flags/Nepal.png",
+                    0.663200, 0.716700, 0.141700,
+                    "Kathmandu", 28.983, "edu/udc/data/img/maps/Nepal_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Nepal"));
+            countries.add(nepal);
+
+            Country netherlandsAntilles = new Country("Netherlands Antilles", "edu/udc/data/img/flags/Netherlands_Antilles.png",
+                    0.000000, 0.250800, 0.386600,
+                    "Willemstad", 0.305, "edu/udc/data/img/maps/Netherland_Antilles_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Netherlands_Antilles"));
+            countries.add(netherlandsAntilles);
+
+            Country netherlands = new Country("Netherlands", "edu/udc/data/img/flags/Netherlands.png",
+                    0.105400, 0.514300, 0.722200,
+                    "Amsterdam", 17.201, "edu/udc/data/img/maps/Netherlands_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Netherlands"));
+            countries.add(netherlands);
         } catch (MalformedURLException e) {
             System.err.println(e);
         }
-    
-    
+
         return countries;
     }
     
