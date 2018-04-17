@@ -11,7 +11,10 @@ import javax.swing.table.TableRowSorter;
 import java.awt.*;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowEvent;
+import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -53,6 +56,10 @@ public class ProjectGUI extends JFrame {
     private JButton bttnInfo = new JButton("More Info");
     private JButton bttnClose = new JButton("Close");
     private JButton bttnClear = new JButton("Clear");
+    private JMenuBar mnbrInfo = new JMenuBar();
+    private JMenu mnInfo = new TopMenu("More Info");
+    private JButton bttnMenuWiki = new JButton("Wikipedia");
+    private JButton bttnStudyPDF = new JButton("Study");
     private JSeparator sprtrLeft = new JSeparator(SwingConstants.VERTICAL);
     private JSeparator sprtrCompare = new JSeparator(SwingConstants.VERTICAL);
     private JSeparator sprtrRight = new JSeparator(SwingConstants.VERTICAL);
@@ -70,6 +77,9 @@ public class ProjectGUI extends JFrame {
     private ImageIcon iiGlobeImage;
     private ImageIcon iiNoImage;
     ArrayList<ImageIcon> images = new ArrayList<>();
+    String fractionalizationPDF = "edu/udc/data/pdf/fractionalization.pdf";
+    String diversityByCountryWiki = "https://en.wikipedia.org/" +
+            "wiki/List_of_countries_ranked_by_ethnic_and_cultural_diversity_level";
     
     // Initialization
     private ProjectGUI() {
@@ -194,6 +204,12 @@ public class ProjectGUI extends JFrame {
         lblLingFractStatic.setForeground(Color.GRAY);
         lblReligFractStatic.setForeground(Color.GRAY);
 
+        mnbrInfo.add(mnInfo);
+        mnInfo.setBorder(bttnClose.getBorder());
+        mnInfo.add(bttnMenuWiki);
+        mnInfo.add(bttnStudyPDF);
+        bttnStudyPDF.setMaximumSize(bttnMenuWiki.getMaximumSize());
+
         bttnToggleCompare.setIcon(iiDoubleArrows);
 
         sprtrLeft.setForeground(Color.GRAY);
@@ -263,7 +279,7 @@ public class ProjectGUI extends JFrame {
                 )
                 .addComponent(sprtrFractBot)
                 .addGroup(mainLayout.createSequentialGroup()
-                    .addComponent(bttnInfo)
+                    .addComponent(mnbrInfo)
                     .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED, 0, Short.MAX_VALUE)
                     .addComponent(bttnClose)
                 )
@@ -323,7 +339,7 @@ public class ProjectGUI extends JFrame {
                 )
                 .addComponent(sprtrFractBot)
                 .addGroup(mainLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
-                    .addComponent(bttnInfo)
+                    .addComponent(mnbrInfo)
                     .addComponent(bttnClose)
                 )
             )
@@ -383,10 +399,11 @@ public class ProjectGUI extends JFrame {
         bttnToggleCompare.addActionListener(alExtend);
         bttnWiki.addActionListener(alWiki);
         bttnCompare.addActionListener(alSendToCompare);
-        bttnClose.addActionListener(alClose);
         bttnRemove.addActionListener(alRemove);
         bttnClear.addActionListener(alClear);
-
+        bttnMenuWiki.addActionListener(alMenuWiki);
+        bttnStudyPDF.addActionListener(alStudy);
+        bttnClose.addActionListener(alClose);
 
         tblCountries.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         trsCountries = new TableRowSorter<>(ctmCountries);
@@ -506,6 +523,28 @@ public class ProjectGUI extends JFrame {
             }
         }
     }
+
+    private void openFile(String urlStr) {
+
+        File file = null;
+        try {
+            file = new File(ClassLoader.getSystemResource(urlStr).toURI());
+        } catch (URISyntaxException e) {
+            e.printStackTrace();
+        }
+
+        if (file != null) {
+            Desktop desktop = Desktop.isDesktopSupported() ? Desktop.getDesktop() : null;
+
+            if (desktop != null && desktop.isSupported(Desktop.Action.OPEN)) {
+                try {
+                    desktop.open(file);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
     
     // Listeners
     private ActionListener alExtend = (ae) -> {
@@ -525,13 +564,9 @@ public class ProjectGUI extends JFrame {
         openWebpage(ctmCountries.getData().get(row).getWikiURL());
     };
 
-    private ActionListener alSendToCompare = (ae) -> {
-        addToCompareTable();
-    };
+    private ActionListener alSendToCompare = (ae) -> addToCompareTable();
 
-    private ActionListener alRemove = (ae) -> {
-        removeFromCompareTable();
-    };
+    private ActionListener alRemove = (ae) -> removeFromCompareTable();
 
     private ActionListener alClear = (ae) -> {
         cmptmCompare.getData().clear();
@@ -540,9 +575,22 @@ public class ProjectGUI extends JFrame {
         this.pack();
     };
 
-    private ActionListener alClose = (ae) -> {
-        this.dispatchEvent(new WindowEvent(this, WindowEvent.WINDOW_CLOSING));
+    private ActionListener alMenuWiki = (ae) -> {
+        URL diversityURL = null;
+        try {
+            diversityURL = new URL(diversityByCountryWiki);
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+        if (diversityURL != null) {
+            openWebpage(diversityURL);
+        }
     };
+
+    private ActionListener alStudy = (ae) -> openFile(fractionalizationPDF);
+
+    private ActionListener alClose = (ae) ->
+            this.dispatchEvent(new WindowEvent(this, WindowEvent.WINDOW_CLOSING));
     
     private ListSelectionListener lslCountriesTable = (lse) -> {
         if (lse.getValueIsAdjusting()) {
