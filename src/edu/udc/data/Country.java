@@ -902,6 +902,7 @@ public class Country {
                     0.484400, 0.047300, 0.429000,
                     "Managua", 6.167, "edu/udc/data/img/maps/Nicaragua_Map.png",
                     new URL("https://en.wikipedia.org/wiki/Nicaragua"));
+            countries.add(nicaragua);
 
             Country niger = new Country("Niger", "edu/udc/data/img/flags/Niger.png",
                     0.651800, 0.651900, 0.201300,

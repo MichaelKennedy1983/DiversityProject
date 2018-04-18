@@ -21,8 +21,17 @@ import java.util.ArrayList;
 public class ProjectGUI extends JFrame {
     // Text
     private String frameTitle = "Diversity By Country";
+    private String toggleTT = "Opens or closes the compare table.";
+    private String wikiTT = "Opens the Wikipedia entry for the selected country in your browser.";
+    private String compareTT = "<html>Adds the selected country to a table which allows countries to <br>" +
+            "be sorted by population or their various fractionalization values.</html";
+    private String removeTT = "Removes selected country from the comparison table.";
     private String fractInfoTT = "<html>Fractionalization measures the probability that two randomly<br>" +
             "drawn individuals (from a country) are not from the same group.</html>";
+    private String moreInfoTT = "Links to information about the study behind this data.";
+    private String menuWikiTT = "Opens the Wikipedia entry containing this data.";
+    private String studyPDFTT = "Opens a PDF of the study behind this data.";
+    private String closeTT = "Exits the program.";
 
     // Containers and Components
     private JPanel pnlMain = new JPanel();
@@ -49,12 +58,12 @@ public class ProjectGUI extends JFrame {
     private JLabel lblReligFractStatic = new JLabel("Religious:");
     private JLabel lblReligFract = new JLabel();
     private JButton bttnToggleCompare = new JButton();
-    private JButton bttnCompare = new JButton("Compare");
     private JButton bttnWiki = new JButton("Wikipedia");
+    private JButton bttnCompare = new JButton("Compare");
     private JButton bttnRemove = new JButton("Remove");
+    private JButton bttnClear = new JButton("Clear");
     private JButton bttnInfo = new JButton("More Info");
     private JButton bttnClose = new JButton("Close");
-    private JButton bttnClear = new JButton("Clear");
     private JMenuBar mnbrInfo = new JMenuBar();
     private JMenu mnInfo = new TopMenu("More Info");
     private JButton bttnMenuWiki = new JButton("Wikipedia");
@@ -211,14 +220,23 @@ public class ProjectGUI extends JFrame {
         lblLingFractStatic.setForeground(Color.GRAY);
         lblReligFractStatic.setForeground(Color.GRAY);
 
+        bttnWiki.setToolTipText(wikiTT);
+        bttnCompare.setToolTipText(compareTT);
+        bttnRemove.setToolTipText(removeTT);
+        bttnClear.setToolTipText(closeTT);
+        bttnClose.setToolTipText(closeTT);
+        bttnToggleCompare.setToolTipText(toggleTT);
+        bttnToggleCompare.setIcon(iiDoubleArrows);
+
         mnbrInfo.setBorderPainted(false);
         mnbrInfo.add(mnInfo);
         mnInfo.setBorder(bttnClose.getBorder());
+        mnInfo.setToolTipText(moreInfoTT);
         mnInfo.add(bttnMenuWiki);
         mnInfo.add(bttnStudyPDF);
+        bttnMenuWiki.setToolTipText(menuWikiTT);
+        bttnStudyPDF.setToolTipText(studyPDFTT);
         bttnStudyPDF.setMaximumSize(bttnMenuWiki.getMaximumSize());
-
-        bttnToggleCompare.setIcon(iiDoubleArrows);
 
         sprtrLeft.setForeground(Color.GRAY);
         sprtrCompare.setForeground(Color.GRAY);
