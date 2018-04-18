@@ -26,6 +26,7 @@ public class ProjectGUI extends JFrame {
     private String compareTT = "<html>Adds the selected country to a table which allows countries to <br>" +
             "be sorted by population or their various fractionalization values.</html";
     private String removeTT = "Removes selected country from the comparison table.";
+    private String clearTT = "Clears all countries from the comparison table and hides the table.";
     private String fractInfoTT = "<html>Fractionalization measures the probability that two randomly<br>" +
             "drawn individuals (from a country) are not from the same group.</html>";
     private String moreInfoTT = "Links to information about the study behind this data.";
@@ -223,7 +224,7 @@ public class ProjectGUI extends JFrame {
         bttnWiki.setToolTipText(wikiTT);
         bttnCompare.setToolTipText(compareTT);
         bttnRemove.setToolTipText(removeTT);
-        bttnClear.setToolTipText(closeTT);
+        bttnClear.setToolTipText(clearTT);
         bttnClose.setToolTipText(closeTT);
         bttnToggleCompare.setToolTipText(toggleTT);
         bttnToggleCompare.setIcon(iiDoubleArrows);
