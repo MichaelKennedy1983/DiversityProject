@@ -885,6 +885,125 @@ public class Country {
                     "Amsterdam", 17.201, "edu/udc/data/img/maps/Netherlands_Map.png",
                     new URL("https://en.wikipedia.org/wiki/Netherlands"));
             countries.add(netherlands);
+
+            Country newCaledonia = new Country("New Caledonia", "edu/udc/data/img/flags/New_Caledonia.png",
+                    0.000000, 0.663300, 0.546200,
+                    "Nouméa", 0.269, "edu/udc/data/img/maps/New_Caledonia_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/New_Caledonia"));
+            countries.add(newCaledonia);
+
+            Country newZealand = new Country("New Zealand", "edu/udc/data/img/flags/New_Zealand.png",
+                    0.396900, 0.165700, 0.811000,
+                    "Wellington", 4.874, "edu/udc/data/img/maps/New_Zealand_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/New_Zealand"));
+            countries.add(newZealand);
+
+            Country nicaragua = new Country("Nicaragua", "edu/udc/data/img/flags/Nicaragua.png",
+                    0.484400, 0.047300, 0.429000,
+                    "Managua", 6.167, "edu/udc/data/img/maps/Nicaragua_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Nicaragua"));
+
+            Country niger = new Country("Niger", "edu/udc/data/img/flags/Niger.png",
+                    0.651800, 0.651900, 0.201300,
+                    "Niamey", 20.973, "edu/udc/data/img/maps/Niger_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Niger"));
+            countries.add(niger);
+
+            Country nigeria = new Country("Nigeria", "edu/udc/data/img/flags/Nigeria.png",
+                    0.850500, 0.831600, 0.742100,
+                    "Abuja", 185.990, "edu/udc/data/img/maps/Nigeria_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Nigeria"));
+            countries.add(nigeria);
+
+            Country northernMarianaIslands = new Country("Northern Mariana Islands", "edu/udc/data/img/flags/Northern_Mariana_Islands.png",
+                    0.000000, 0.775400, 0.481100,
+                    "Saipan", 0.053, "edu/udc/data/img/maps/Northern_Mariana_Islands_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Northern_Mariana_Islands"));
+            countries.add(northernMarianaIslands);
+
+            Country norway = new Country("Norway", "edu/udc/data/img/flags/Norway.png",
+                    0.058600, 0.067300, 0.204800,
+                    "Oslo", 5.267, "edu/udc/data/img/maps/Norway_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Norway"));
+            countries.add(norway);
+
+            Country oman = new Country("Oman", "edu/udc/data/img/flags/Oman.png",
+                    0.437300, 0.356700, 0.432200,
+                    "Muscat", 4.425, "edu/udc/data/img/maps/Oman_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Oman"));
+            countries.add(oman);
+
+            Country pakistan = new Country("Pakistan", "edu/udc/data/img/flags/Pakistan.png",
+                    0.709800, 0.719000, 0.384800,
+                    "Islamabad", 209.970, "edu/udc/data/img/maps/Pakistan_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Pakistan"));
+            countries.add(pakistan);
+
+            Country palau = new Country("Palau", "edu/udc/data/img/flags/Palau.png",
+                    0.431200, 0.315700, 0.714700,
+                    "Ngerulmud", 0.022, "edu/udc/data/img/maps/Palau_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Palau"));
+            countries.add(palau);
+
+            Country panama = new Country("Panama", "edu/udc/data/img/flags/Panama.png",
+                    0.552800, 0.387300, 0.333800,
+                    "Panama City", 4.034, "edu/udc/data/img/maps/Panama_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Panama"));
+            countries.add(panama);
+
+            Country papuaNewGuinea = new Country("Papua New Guinea", "edu/udc/data/img/flags/Papua_New_Guinea.png",
+                    0.271800, 0.352600, 0.552300,
+                    "Port Moresby", 8.085, "edu/udc/data/img/maps/Papua_New_Guinea_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Papua_New_Guinea"));
+            countries.add(papuaNewGuinea);
+
+            Country paraguay = new Country("Paraguay", "edu/udc/data/img/flags/Paraguay.png",
+                    0.168900, 0.168900, 0.212300,
+                    "Asunción", 6.897, "edu/udc/data/img/maps/Paraguay_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Paraguay"));
+            countries.add(paraguay);
+
+            Country peru = new Country("Peru", "edu/udc/data/img/flags/Peru.png",
+                    0.656600, 0.335800, 0.198800,
+                    "Lima", 32.554, "edu/udc/data/img/maps/Peru_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Peru"));
+            countries.add(peru);
+
+            Country philippines = new Country("Philippines", "edu/udc/data/img/flags/Philippines.png",
+                    0.238500, 0.836000, 0.305600,
+                    "Manila", 100.981, "edu/udc/data/img/maps/Philippines_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Philippines"));
+            countries.add(philippines);
+
+            Country poland = new Country("Poland", "edu/udc/data/img/flags/Poland.png",
+                    0.118300, 0.046800, 0.171200,
+                    "Warsaw", 38.422, "edu/udc/data/img/maps/Poland_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Poland"));
+            countries.add(poland);
+
+            Country portugal = new Country("Portugal", "edu/udc/data/img/flags/Portugal.png",
+                    0.046800, 0.019800, 0.143800,
+                    "Lisbon", 10.380, "edu/udc/data/img/maps/Portugal_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Portugal"));
+            countries.add(portugal);
+
+            Country puertoRico = new Country("Puerto Rico", "edu/udc/data/img/flags/Puerto_Rico.png",
+                    0.000000, 0.035200, 0.495200,
+                    "San Juan", 3.411, "edu/udc/data/img/maps/Puerto_Rico_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Puerto_Rico"));
+            countries.add(puertoRico);
+
+            Country qatar = new Country("Qatar", "edu/udc/data/img/flags/Qatar.png",
+                    0.745600, 0.480000, 0.095000,
+                    "Doha", 2.642, "edu/udc/data/img/maps/Qatar_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Qatar"));
+            countries.add(qatar);
+
+            Country reunion = new Country("Reunion", "edu/udc/data/img/flags/Reunion.png",
+                    0.000000, 0.157800, 0.195200,
+                    "", 0.866, "edu/udc/data/img/maps/Reunion_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/R%C3%A9union"));
+            countries.add(reunion);
         } catch (MalformedURLException e) {
             System.err.println(e);
         }
