@@ -14,7 +14,6 @@ import java.awt.event.WindowEvent;
 import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
-import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -76,16 +75,17 @@ public class ProjectGUI extends JFrame {
     private ImageIcon iiDoubleArrows;
     private ImageIcon iiGlobeImage;
     private ImageIcon iiNoImage;
-    ArrayList<ImageIcon> images = new ArrayList<>();
-    String fractionalizationPDF = "edu/udc/data/pdf/fractionalization.pdf";
-    String diversityByCountryWiki = "https://en.wikipedia.org/" +
+    private ArrayList<ImageIcon> images = new ArrayList<>();
+    private String fractionalizationPDF = "edu/udc/data/pdf/fractionalization.pdf";
+    private String diversityByCountryWiki = "https://en.wikipedia.org/" +
             "wiki/List_of_countries_ranked_by_ethnic_and_cultural_diversity_level";
+
     
     // Initialization
     private ProjectGUI() {
         try {
             for (UIManager.LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("Windows".equals(info.getName())) {
                     UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
@@ -96,6 +96,7 @@ public class ProjectGUI extends JFrame {
                  UnsupportedLookAndFeelException e) {
             e.printStackTrace();
         }
+
         initData();
         initImages();
         initComponents();
@@ -103,11 +104,15 @@ public class ProjectGUI extends JFrame {
     }
     
     private void initData() {
+        System.out.println("Initializing: Data");
+
         ctmCountries = new CountriesTableModel(Country.getCountryList());
         cmptmCompare = new CompareTableModel();
     }
     
     private void initImages() {
+        System.out.println("Initializing: Images");
+
         Image tmp = null;
         iiFrameIcon = null;
 
@@ -174,14 +179,15 @@ public class ProjectGUI extends JFrame {
     }
     
     private void initComponents() {
+        System.out.println("Initializing: Components");
+
         tblCountries.setModel(ctmCountries);
         tblCountries.getColumnModel().getColumn(0).setMaxWidth(40);
         tblCountries.getColumnModel().getColumn(1).setMaxWidth(40);
-//        ((DefaultTableCellRenderer)tblCountries.getTableHeader().getDefaultRenderer())
-//                .setHorizontalAlignment(SwingConstants.LEFT);
         tblCountries.setDefaultRenderer(ImageIcon.class, new FlagRenderer());
         scrlpnCountries.add(tblCountries);
         scrlpnCountries.setViewportView(tblCountries);
+        scrlpnCountries.getViewport().setBackground(Color.WHITE);
 
         tblCompare.setModel(cmptmCompare);
         tblCompare.setDefaultRenderer(Double.class, new DoubleRenderer());
@@ -190,6 +196,7 @@ public class ProjectGUI extends JFrame {
         }
         scrlpnCompare.add(tblCompare);
         scrlpnCompare.setViewportView(tblCompare);
+        scrlpnCompare.getViewport().setBackground(Color.WHITE);
 
         lblCountriesFilter.setForeground(Color.GRAY);
         lblMap.setIcon(iiGlobeImage);
@@ -204,6 +211,7 @@ public class ProjectGUI extends JFrame {
         lblLingFractStatic.setForeground(Color.GRAY);
         lblReligFractStatic.setForeground(Color.GRAY);
 
+        mnbrInfo.setBorderPainted(false);
         mnbrInfo.add(mnInfo);
         mnInfo.setBorder(bttnClose.getBorder());
         mnInfo.add(bttnMenuWiki);
@@ -217,7 +225,10 @@ public class ProjectGUI extends JFrame {
         sprtrDetails.setForeground(Color.GRAY);
         sprtrFractTop.setForeground(Color.GRAY);
         sprtrFractBot.setForeground(Color.GRAY);
-        
+
+        pnlMain.setBackground(Color.WHITE);
+        pnlCompare.setBackground(Color.WHITE);
+
         // Layout for main panel
         GroupLayout mainLayout = new GroupLayout(pnlMain);
         pnlMain.setLayout(mainLayout);
@@ -357,7 +368,6 @@ public class ProjectGUI extends JFrame {
         pnlCompare.setLayout(compareLayout);
 
         compareLayout.setAutoCreateGaps(true);
-        //compareLayout.setAutoCreateContainerGaps(true);
 
         compareLayout.setHorizontalGroup(compareLayout.createSequentialGroup()
             .addGroup(compareLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
@@ -394,6 +404,8 @@ public class ProjectGUI extends JFrame {
     }
     
     private void initControls() {
+        System.out.println("Initializing: Controls");
+
         ToolTipManager.sharedInstance().setInitialDelay(150);
 
         bttnToggleCompare.addActionListener(alExtend);
