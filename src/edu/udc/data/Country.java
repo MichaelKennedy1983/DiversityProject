@@ -1005,6 +1005,126 @@ public class Country {
                     "", 0.866, "edu/udc/data/img/maps/Reunion_Map.png",
                     new URL("https://en.wikipedia.org/wiki/R%C3%A9union"));
             countries.add(reunion);
+
+            Country romania = new Country("Romania", "edu/udc/data/img/flags/Romania.png",
+                    0.306900, 0.172300, 0.237300,
+                    "Bucharest", 19.638, "edu/udc/data/img/maps/Romania_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Romania"));
+            countries.add(romania);
+
+            Country russianFederation = new Country("Russian Federation", "edu/udc/data/img/flags/Russia.png",
+                    0.245200, 0.248500, 0.439800,
+                    "Moscow", 144.527, "edu/udc/data/img/maps/Russian_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Russia"));
+            countries.add(russianFederation);
+
+            Country rwanda = new Country("Rwandar", "edu/udc/data/img/flags/Rwanda.png",
+                    0.323800, 0.000000, 0.506600,
+                    "Kigali", 11.263, "edu/udc/data/img/maps/Rwanda_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Rwanda"));
+            countries.add(rwanda);
+
+            Country saintLucia = new Country("Saint Lucia", "edu/udc/data/img/flags/Saint_Lucia.png",
+                    0.176900, 0.316900, 0.332000,
+                    "Castries", 0.178, "edu/udc/data/img/maps/Saint_Lucia_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Saint_Lucia"));
+            countries.add(saintLucia);
+
+            Country saintVincentGrenadines = new Country("Saint Vincent and the Grenadines", "edu/udc/data/img/flags/Saint_Vincent_and_the_Grenadines.png",
+                    0.306600, 0.017500, 0.702800,
+                    "Kingstown", 0.110, "edu/udc/data/img/maps/Saint_Vincent_and_the_Grenadines_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Saint_Vincent_and_the_Grenadines"));
+            countries.add(saintVincentGrenadines);
+
+            Country westernSamoa = new Country("Western Samoa", "edu/udc/data/img/flags/Western_Samoa.png",
+                    0.137600, 0.011100, 0.787100,
+                    "Apia", 0.192, "edu/udc/data/img/flags/Western_Samoa.png",
+                    new URL("https://en.wikipedia.org/wiki/Samoa"));
+            countries.add(westernSamoa);
+
+            Country sanMarino = new Country("San Marino", "edu/udc/data/img/flags/San_Marino.png",
+                    0.292700, 0.000000, 0.197500,
+                    "San Marino", 0.033, "edu/udc/data/img/maps/San_Marino_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/San_Marino"));
+            countries.add(sanMarino);
+
+            Country saoTomePrincipe = new Country("Sao Tome and Principe", "edu/udc/data/img/flags/Sao_Tome_and_Principe.png",
+                    0.000000, 0.232200, 0.186600,
+                    "São Tomé", 0.200, "edu/udc/data/img/maps/São_Tomé_and_Príncipe_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe"));
+            countries.add(saoTomePrincipe);
+
+            Country saudiArabia = new Country("Saudi Arabia", "edu/udc/data/img/flags/Saudi_Arabia.png",
+                    0.180000, 0.094900, 0.127000,
+                    "Riyadh", 33.000, "edu/udc/data/img/maps/Saudi_Arabia_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Saudi_Arabia"));
+            countries.add(saudiArabia);
+
+            Country senegal = new Country("Senegal", "edu/udc/data/img/flags/Senegal.png",
+                    0.693900, 0.708100, 0.149700,
+                    "Dakar", 15.412, "edu/udc/data/img/maps/Senegal_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Senegal"));
+            countries.add(senegal);
+
+            Country serbia = new Country("Serbia", "edu/udc/data/img/flags/Serbia.png",
+                    0.573600, 0.000000, 0.000000,
+                    "Belgrade", 7.058, "edu/udc/data/img/maps/Serbia_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Serbia"));
+            countries.add(serbia);
+
+            Country seychelles = new Country("Seychelles", "edu/udc/data/img/flags/Seychelles.png",
+                    0.202500, 0.160600, 0.232300,
+                    "Victoria", 0.094, "edu/udc/data/img/maps/Seychelles_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Seychelles"));
+            countries.add(seychelles);
+
+            Country sierraLeone = new Country("Sierra Leone", "edu/udc/data/img/flags/Sierra_Leone.png",
+                    0.819100, 0.763400, 0.539500,
+                    "Freetown", 7.076, "edu/udc/data/img/maps/Sierra_Leone_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Sierra_Leone"));
+            countries.add(sierraLeone);
+
+            Country singapore = new Country("Singapore", "edu/udc/data/img/flags/Singapore.png",
+                    0.385700, 0.383500, 0.656100,
+                    "Singapore", 5.612, "edu/udc/data/img/maps/Singapore_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Singapore"));
+            countries.add(singapore);
+
+            Country slovakRepublic = new Country("Slovak Republic", "edu/udc/data/img/flags/Slovakia.png",
+                    0.253900, 0.255100, 0.565500,
+                    "Bratislava", 5.435, "edu/udc/data/img/maps/Slovakia_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Slovakia"));
+            countries.add(slovakRepublic);
+
+            Country slovenia = new Country("Slovenia", "edu/udc/data/img/flags/Slovenia.png",
+                    0.221600, 0.220100, 0.286800,
+                    "Ljubljana", 2.066, "edu/udc/data/img/maps/Slovenia_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Slovenia"));
+            countries.add(slovenia);
+
+            Country solomonIslands = new Country("Solomon Islands", "edu/udc/data/img/flags/Solomon_Islands.png",
+                    0.111000, 0.525400, 0.670800,
+                    "Honiara", 0.599, "edu/udc/data/img/maps/Solomon_Islands_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Solomon_Islands"));
+            countries.add(solomonIslands);
+
+            Country somalia = new Country("Somalia", "edu/udc/data/img/flags/Somalia.png",
+                    0.811700, 0.032600, 0.002800,
+                    "Mogadishu", 14.318, "edu/udc/data/img/maps/Somalia_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Somalia"));
+            countries.add(somalia);
+
+            Country southAfrica = new Country("South Africa", "edu/udc/data/img/flags/South_Africa.png",
+                    0.751700, 0.865200, 0.860300,
+                    "Pretoria", 54.957, "edu/udc/data/img/maps/South_Africa_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/South_Africa"));
+            countries.add(southAfrica);
+
+            Country spain = new Country("Spain", "edu/udc/data/img/flags/Spain.png",
+                    0.416500, 0.413200, 0.451400,
+                    "Madrid", 46.354, "edu/udc/data/img/maps/Spain_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Spain"));
+            countries.add(spain);
         } catch (MalformedURLException e) {
             System.err.println(e);
         }

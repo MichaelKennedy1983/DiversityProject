@@ -19,21 +19,6 @@ import java.net.URL;
 import java.util.ArrayList;
 
 public class ProjectGUI extends JFrame {
-    // Text
-    private String frameTitle = "Diversity By Country";
-    private String toggleTT = "Opens or closes the compare table.";
-    private String wikiTT = "Opens the Wikipedia entry for the selected country in your browser.";
-    private String compareTT = "<html>Adds the selected country to a table which allows countries to <br>" +
-            "be sorted by population or their various fractionalization values.</html";
-    private String removeTT = "Removes selected country from the comparison table.";
-    private String clearTT = "Clears all countries from the comparison table and hides the table.";
-    private String fractInfoTT = "<html>Fractionalization measures the probability that two randomly<br>" +
-            "drawn individuals (from a country) are not from the same group.</html>";
-    private String moreInfoTT = "Links to information about the study behind this data.";
-    private String menuWikiTT = "Opens the Wikipedia entry containing this data.";
-    private String studyPDFTT = "Opens a PDF of the study behind this data.";
-    private String closeTT = "Exits the program.";
-
     // Containers and Components
     private JPanel pnlMain = new JPanel();
     private JPanel pnlCompare = new JPanel();
@@ -90,7 +75,21 @@ public class ProjectGUI extends JFrame {
     private String diversityByCountryWiki = "https://en.wikipedia.org/" +
             "wiki/List_of_countries_ranked_by_ethnic_and_cultural_diversity_level";
 
-    
+    // Text
+    private String frameTitle = "Diversity By Country";
+    private String toggleTT = "Opens or closes the compare table.";
+    private String wikiTT = "Opens the Wikipedia entry for the selected country in your browser.";
+    private String compareTT = "<html>Adds the selected country to a table which allows countries to <br>" +
+            "be sorted by population or their various fractionalization values.</html";
+    private String removeTT = "Removes selected country from the comparison table.";
+    private String clearTT = "Clears all countries from the comparison table and hides the table.";
+    private String fractInfoTT = "<html>Fractionalization measures the probability that two randomly<br>" +
+            "drawn individuals (from a country) are not from the same group.</html>";
+    private String moreInfoTT = "Links to information about the study behind this data.";
+    private String menuWikiTT = "Opens the Wikipedia entry containing this data.";
+    private String studyPDFTT = "Opens a PDF of the study behind this data.";
+    private String closeTT = "Exits the program.";
+
     // Initialization
     private ProjectGUI() {
         try {
