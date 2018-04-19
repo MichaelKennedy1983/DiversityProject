@@ -1245,6 +1245,97 @@ public class Country {
                     "Kampala", 41.488, "edu/udc/data/img/maps/Uganda_Map.png",
                     new URL("https://en.wikipedia.org/wiki/Uganda"));
             countries.add(uganda);
+
+            Country ukraine = new Country("Ukraine", "edu/udc/data/img/flags/Ukraine.png",
+                    0.473700, 0.474100, 0.615700,
+                    "Kiev", 42.418, "edu/udc/data/img/maps/Ukraine_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Ukraine"));
+            countries.add(ukraine);
+
+            Country unitedArabEmirates = new Country("United Arab Emirates", "edu/udc/data/img/flags/United_Arab_Emirates.png",
+                    0.625200, 0.487400, 0.331000,
+                    "Abu Dhabi", 9.270, "edu/udc/data/img/maps/United_Arab_Emirates_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/United_Arab_Emirates"));
+            countries.add(unitedArabEmirates);
+
+            Country unitedKingdom = new Country("United Kingdom", "edu/udc/data/img/flags/United_Kingdom.png",
+                    0.121100, 0.053200, 0.694400,
+                    "London", 65.648, "edu/udc/data/img/maps/United_Kingdom_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/United_Kingdom"));
+            countries.add(unitedKingdom);
+
+            Country unitedStates = new Country("United States", "edu/udc/data/img/flags/United_States.png",
+                    0.490100, 0.564700, 0.824100,
+                    "Washington, D.C.", 325.719, "edu/udc/data/img/maps/United_States_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/United_States"));
+            countries.add(unitedStates);
+
+            Country uruguay = new Country("Uruguay", "edu/udc/data/img/flags/Uruguay.png",
+                    0.250400, 0.081700, 0.354800,
+                    "Montevideo", 3.444, "edu/udc/data/img/maps/Uruguay_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Uruguay"));
+            countries.add(uruguay);
+
+            Country uzbekistan = new Country("Uzbekistan", "edu/udc/data/img/flags/Uzbekistan.png",
+                    0.412500, 0.412000, 0.213300,
+                    "Tashkent", 32.979, "edu/udc/data/img/maps/Uzbekistan_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Uzbekistan"));
+            countries.add(uzbekistan);
+
+            Country vanuatu = new Country("Vanuatu", "edu/udc/data/img/flags/Vanuatu.png",
+                    0.041300, 0.579400, 0.704400,
+                    "Port Vila", 0.270, "edu/udc/data/img/maps/Vanuatu_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Vanuatu"));
+            countries.add(vanuatu);
+
+            Country venezuela = new Country("Venezuela", "edu/udc/data/img/flags/Venezuela.png",
+                    0.496600, 0.068600, 0.135000,
+                    "Caracas", 31.568, "edu/udc/data/img/maps/Venezuela_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Venezuela"));
+            countries.add(venezuela);
+
+            Country vietnam = new Country("Vietnam", "edu/udc/data/img/flags/Vietnam.png",
+                    0.238300, 0.237700, 0.508000,
+                    "Hanoi", 94.569, "edu/udc/data/img/maps/Vietnam_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Vietnam"));
+            countries.add(vietnam);
+
+            Country usVirginIslands = new Country("United States Virgin Islands", "edu/udc/data/img/flags/United_States_Virgin_Islands.png",
+                    0.000000, 0.314000, 0.635900,
+                    "Charlotte Amalie", 0.106, "edu/udc/data/img/maps/Virgin_Islands_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/United_States_Virgin_Islands"));
+            countries.add(usVirginIslands);
+
+            Country westBank = new Country("West Bank", "edu/udc/data/img/flags/West_Bank.png",
+                    0.000000, 0.143800, 0.309500,
+                    "Ramallah", 3.285, "edu/udc/data/img/maps/West_Bank_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/West_Bank"));
+            countries.add(westBank);
+
+            Country yemen = new Country("Yemen", "edu/udc/data/img/flags/Yemen.png",
+                    0.000000, 0.008000, 0.002300,
+                    "Sana'a", 27.584, "edu/udc/data/img/maps/Yemen_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Yemen"));
+            countries.add(yemen);
+
+            Country yugoslavia = new Country("Yugoslavia", "edu/udc/data/img/flags/Yugoslavia.png",
+                    0.809200, 0.606400, 0.553000,
+                    "Belgrade", 23.230, "edu/udc/data/img/maps/Yugoslavia_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Socialist_Federal_Republic_of_Yugoslavia"));
+            countries.add(yugoslavia);
+
+            Country zambia = new Country("Zambia", "edu/udc/data/img/flags/Zambia.png",
+                    0.780800, 0.873400, 0.735900,
+                    "Lusaka", 16.691, "edu/udc/data/img/maps/Zambia_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Zambia"));
+            countries.add(zambia);
+
+            Country zimbabwe = new Country("Zimbabwe", "edu/udc/data/img/flags/Zimbabwe.png",
+                    0.387400, 0.447200, 0.736300,
+                    "Harare", 16.150, "edu/udc/data/img/maps/Zimbabwe_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Zimbabwe"));
+            countries.add(zimbabwe);
+
         } catch (MalformedURLException e) {
             System.err.println(e);
         }
