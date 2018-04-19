@@ -1125,6 +1125,126 @@ public class Country {
                     "Madrid", 46.354, "edu/udc/data/img/maps/Spain_Map.png",
                     new URL("https://en.wikipedia.org/wiki/Spain"));
             countries.add(spain);
+
+            Country sriLanka = new Country("Sri Lanka", "edu/udc/data/img/flags/Sri_Lanka.png",
+                    0.415000, 0.464500, 0.485300,
+                    "Sri Jayawardenepura Kotte", 21.444, "edu/udc/data/img/maps/Sri_Lanka_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Sri_Lanka"));
+            countries.add(sriLanka);
+
+            Country saintKittsNevis = new Country("Saint Kitts and Nevis", "edu/udc/data/img/flags/Saint_Kitts_and_Nevis.png",
+                    0.184200, 0.000000, 0.661400,
+                    "Basseterre", 0.055, "edu/udc/data/img/maps/Saint_KittsNevis_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Saint_Kitts_and_Nevis"));
+            countries.add(saintKittsNevis);
+
+            Country sudan = new Country("Sudan", "edu/udc/data/img/flags/Sudan.png",
+                    0.714700, 0.719000, 0.430700,
+                    "Khartoum", 39.579, "edu/udc/data/img/maps/Sudan_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Sudan"));
+            countries.add(sudan);
+
+            Country suriname = new Country("Suriname", "edu/udc/data/img/flags/Suriname.png",
+                    0.733200, 0.331000, 0.791000,
+                    "Paramaribo", 0.558, "edu/udc/data/img/maps/Suriname_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Suriname"));
+            countries.add(suriname);
+
+            Country swaziland = new Country("Swaziland", "edu/udc/data/img/flags/Swaziland.png",
+                    0.058200, 0.172200, 0.444400,
+                    "Mbabane ", 1.343, "edu/udc/data/img/maps/Swaziland_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Swaziland"));
+            countries.add(swaziland);
+
+            Country sweden = new Country("Sweden", "edu/udc/data/img/flags/Sweden.png",
+                    0.060000, 0.196800, 0.234200,
+                    "Stockholm", 10.135, "edu/udc/data/img/maps/Sweden_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Sweden"));
+            countries.add(sweden);
+
+            Country switzerland = new Country("Switzerland", "edu/udc/data/img/flags/Switzerland.png",
+                    0.531400, 0.544100, 0.608300,
+                    "Bern", 8.401, "edu/udc/data/img/maps/Switzerland_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Switzerland"));
+            countries.add(switzerland);
+
+            Country syria = new Country("Syria", "edu/udc/data/img/flags/Syria.png",
+                    0.539900, 0.181700, 0.431000,
+                    "Damascus", 17.065, "edu/udc/data/img/maps/Syria_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Syria"));
+            countries.add(syria);
+
+            Country taiwan = new Country("Taiwan", "edu/udc/data/img/flags/Taiwan.png",
+                    0.274400, 0.502800, 0.684500,
+                    "Taipei", 23.550, "edu/udc/data/img/maps/Taiwan_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Taiwan"));
+            countries.add(taiwan);
+
+            Country tajikistan = new Country("Tajikistan", "edu/udc/data/img/flags/Tajikistan.png",
+                    0.510700, 0.547300, 0.338600,
+                    "Dushanbe", 8.735, "edu/udc/data/img/maps/Tajikistan_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Tajikistan"));
+            countries.add(tajikistan);
+
+            Country tanzania = new Country("Tanzania", "edu/udc/data/img/flags/Tanzania.png",
+                    0.735300, 0.898300, 0.633400,
+                    "Dodoma", 55.572, "edu/udc/data/img/maps/Tanzania_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Tanzania"));
+            countries.add(tanzania);
+
+            Country thailand = new Country("Thailand", "edu/udc/data/img/flags/Thailand.png",
+                    0.633800, 0.634400, 0.099400,
+                    "Bangkok", 68.864, "edu/udc/data/img/maps/Thailand_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Thailand"));
+            countries.add(thailand);
+
+            Country togo = new Country("Togo", "edu/udc/data/img/flags/Togo.png",
+                    0.709900, 0.898000, 0.659600,
+                    "Lomé", 7.965, "edu/udc/data/img/maps/Togo_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Togo"));
+            countries.add(togo);
+
+            Country tonga = new Country("Tonga", "edu/udc/data/img/flags/Tonga.png",
+                    0.086900, 0.378200, 0.621400,
+                    "Nukuʻalofa", 0.103, "edu/udc/data/img/maps/Tonga_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Tonga"));
+            countries.add(tonga);
+
+            Country trinidadTobago = new Country("Trinidad and Tobago", "edu/udc/data/img/flags/Trinidad_and_Tobago.png",
+                    0.647500, 0.125100, 0.793600,
+                    "Port of Spain", 1.354, "edu/udc/data/img/maps/Trinidad_and_Tobago_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Trinidad_and_Tobago"));
+            countries.add(trinidadTobago);
+
+            Country tunisia = new Country("Tunisia", "edu/udc/data/img/flags/Tunisia.png",
+                    0.039400, 0.012400, 0.010400,
+                    "Tunis", 11.304, "edu/udc/data/img/maps/Tunisia_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Tunisia"));
+            countries.add(tunisia);
+
+            Country turkey = new Country("Turkey", "edu/udc/data/img/flags/Turkey.png",
+                    0.320000, 0.221600, 0.004900,
+                    "Ankara", 80.811, "edu/udc/data/img/maps/Turkey_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Turkey"));
+            countries.add(turkey);
+
+            Country turkmenistan = new Country("Turkmenistan", "edu/udc/data/img/flags/Turkmenistan.png",
+                    0.391800, 0.398400, 0.232700,
+                    "Ashgabat", 5.663, "edu/udc/data/img/maps/Turkmenistan_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Turkmenistan"));
+            countries.add(turkmenistan);
+
+            Country tuvalu = new Country("Tuvalu", "edu/udc/data/img/flags/Tuvalu.png",
+                    0.162900, 0.137200, 0.252400,
+                    "Funafuti", 0.011, "edu/udc/data/img/maps/Tuvalu_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Tuvalu"));
+            countries.add(tuvalu);
+
+            Country uganda = new Country("Uganda", "edu/udc/data/img/flags/Uganda.png",
+                    0.930200, 0.922700, 0.633200,
+                    "Kampala", 41.488, "edu/udc/data/img/maps/Uganda_Map.png",
+                    new URL("https://en.wikipedia.org/wiki/Uganda"));
+            countries.add(uganda);
         } catch (MalformedURLException e) {
             System.err.println(e);
         }
