@@ -1,7 +1,6 @@
 package edu.udc;
 
 import javax.swing.*;
-import java.awt.*;
 
 public class TopMenu extends JMenu {
     public TopMenu(String text) {

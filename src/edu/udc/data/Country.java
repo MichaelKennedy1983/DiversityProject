@@ -1038,7 +1038,7 @@ public class Country {
 
             Country westernSamoa = new Country("Western Samoa", "edu/udc/data/img/flags/Western_Samoa.png",
                     0.137600, 0.011100, 0.787100,
-                    "Apia", 0.192, "edu/udc/data/img/flags/Western_Samoa.png",
+                    "Apia", 0.192, "edu/udc/data/img/maps/Samoa_Map.png",
                     new URL("https://en.wikipedia.org/wiki/Samoa"));
             countries.add(westernSamoa);
 

@@ -16,6 +16,8 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URISyntaxException;
 import java.net.URL;
+import java.text.Format;
+import java.text.NumberFormat;
 import java.util.ArrayList;
 
 public class ProjectGUI extends JFrame {
@@ -89,6 +91,8 @@ public class ProjectGUI extends JFrame {
     private String menuWikiTT = "Opens the Wikipedia entry containing this data.";
     private String studyPDFTT = "Opens a PDF of the study behind this data.";
     private String closeTT = "Exits the program.";
+
+    private Format fractFormat = NumberFormat.getPercentInstance();
 
     // Initialization
     private ProjectGUI() {
@@ -537,9 +541,9 @@ public class ProjectGUI extends JFrame {
         lblCountry.setText(country.getName());
         lblCapital.setText(country.getCapital());
         lblPop.setText(""+ country.getPopMil());
-        lblEthnicFrac.setText("" + country.getEthnicFract());
-        lblLingFract.setText("" + country.getLinguisticFract());
-        lblReligFract.setText("" + country.getReligiousFract());
+        lblEthnicFrac.setText(fractFormat.format(country.getEthnicFract()));
+        lblLingFract.setText(fractFormat.format(country.getLinguisticFract()));
+        lblReligFract.setText(fractFormat.format(country.getReligiousFract()));
     }
 
     private void openWebpage(URL url) {
