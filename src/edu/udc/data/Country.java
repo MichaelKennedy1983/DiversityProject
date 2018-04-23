@@ -1018,7 +1018,7 @@ public class Country {
                     new URL("https://en.wikipedia.org/wiki/Russia"));
             countries.add(russianFederation);
 
-            Country rwanda = new Country("Rwandar", "edu/udc/data/img/flags/Rwanda.png",
+            Country rwanda = new Country("Rwanda", "edu/udc/data/img/flags/Rwanda.png",
                     0.323800, 0.000000, 0.506600,
                     "Kigali", 11.263, "edu/udc/data/img/maps/Rwanda_Map.png",
                     new URL("https://en.wikipedia.org/wiki/Rwanda"));

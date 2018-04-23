@@ -1,5 +1,6 @@
 package edu.udc;
 
+import com.sun.deploy.ref.AppModel;
 import edu.udc.data.Country;
 
 import javax.imageio.ImageIO;
@@ -74,6 +75,7 @@ public class ProjectGUI extends JFrame {
     private ImageIcon iiNoImage;
     private ArrayList<ImageIcon> images = new ArrayList<>();
     private String fractionalizationPDF = "edu/udc/data/pdf/fractionalization.pdf";
+    private String fractionalizationWeb = "http://www.nber.org/papers/w9411.pdf";
     private String diversityByCountryWiki = "https://en.wikipedia.org/" +
             "wiki/List_of_countries_ranked_by_ethnic_and_cultural_diversity_level";
 
@@ -621,7 +623,18 @@ public class ProjectGUI extends JFrame {
         }
     };
 
-    private ActionListener alStudy = (ae) -> openFile(fractionalizationPDF);
+    private ActionListener alStudy = (ae) -> {
+        URL fractWeb = null;
+        try {
+            fractWeb = new URL(fractionalizationWeb);
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+        if (fractWeb != null) {
+            openWebpage(fractWeb);
+        }
+        //openFile(fractionalizationPDF);
+    };
 
     private ActionListener alClose = (ae) ->
             this.dispatchEvent(new WindowEvent(this, WindowEvent.WINDOW_CLOSING));
